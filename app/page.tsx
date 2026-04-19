@@ -99,29 +99,8 @@ const shoppingHot = [
 ];
 
 function RankBadge({ rank }: { rank: number }) {
-  if (rank === 1) {
-    return (
-      <span className="rank-gold shrink-0 w-7 h-7 rounded-lg flex items-center justify-center text-sm font-bold text-yellow-900">
-        {rank}
-      </span>
-    );
-  }
-  if (rank === 2) {
-    return (
-      <span className="rank-silver shrink-0 w-7 h-7 rounded-lg flex items-center justify-center text-sm font-bold text-zinc-800">
-        {rank}
-      </span>
-    );
-  }
-  if (rank === 3) {
-    return (
-      <span className="rank-bronze shrink-0 w-7 h-7 rounded-lg flex items-center justify-center text-sm font-bold text-orange-100">
-        {rank}
-      </span>
-    );
-  }
   return (
-    <span className="rank-badge shrink-0 w-7 h-7 rounded-lg flex items-center justify-center text-sm font-medium text-zinc-600 dark:text-zinc-300">
+    <span className="rank-num shrink-0 w-6 text-center text-xs font-medium text-zinc-400 dark:text-zinc-600">
       {rank}
     </span>
   );
@@ -165,7 +144,7 @@ function HotListCard({ data, index }: { data: typeof hotLists[0]; index: number 
 function ShoppingCard({ item }: { item: typeof shoppingHot[0] }) {
   return (
     <div className="shop-card flex items-center gap-4 rounded-xl border border-zinc-200 dark:border-zinc-800 p-4">
-      <div className="shrink-0 w-9 h-9 rounded-lg bg-zinc-900 dark:bg-zinc-100 flex items-center justify-center text-zinc-100 dark:text-zinc-900 font-medium text-base">
+      <div className="shrink-0 w-6 text-center text-xs font-medium text-zinc-400 dark:text-zinc-600">
         {item.rank}
       </div>
       <div className="flex-1 min-w-0">

@@ -92,26 +92,6 @@ html {
   background: rgba(255, 255, 255, 0.03);
 }
 
-.rank-gold {
-  background: linear-gradient(135deg, #fef08a 0%, #eab308 40%, #ca8a04 100%);
-}
-
-.rank-silver {
-  background: linear-gradient(135deg, #f4f4f5 0%, #a1a1aa 40%, #71717a 100%);
-}
-
-.rank-bronze {
-  background: linear-gradient(135deg, #fed7aa 0%, #ea580c 40%, #9a3412 100%);
-}
-
-.rank-badge {
-  background: linear-gradient(135deg, #e4e4e7 0%, #a1a1aa 100%);
-}
-
-.dark .rank-badge {
-  background: linear-gradient(135deg, #3f3f46 0%, #52525b 100%);
-}
-
 .shop-card {
   transition: all 0.2s ease;
 }
